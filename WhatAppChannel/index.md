@@ -7,7 +7,7 @@ permalink: /WhatAppChannel/
 # Blog
 
 {% for post in site.posts %}
-  {% if post.categories contains "blog" %}
+  {% if post.categories contains "WhatAppChannel" %}
   - **[{{ post.title }}]({{ post.url }})**  
     <small>{{ post.date | date: "%b %d, %Y" }}</small>
   {% endif %}
