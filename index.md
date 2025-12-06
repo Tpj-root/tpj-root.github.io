@@ -18,6 +18,7 @@ Welcome to my personal website! Here, I share:
 
 - [Projects](/projects/) — Code, tools, and experiments  
 - [Blog](/blog/) — Notes, tutorials, and thoughts  
+- [WhatAppChannel](/WhatAppChannel/) — Fast updates, project logs, and behind-the-scenes notes.
 - [About Me](about.html) — Who I am and what I do  
 - [BookMarks](bookmarks.html) — A collection of useful links and online tools.
 
