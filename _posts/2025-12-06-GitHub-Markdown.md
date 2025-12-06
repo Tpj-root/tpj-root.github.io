@@ -363,3 +363,154 @@ So the meaning depends on **where** you use it:
 
 
 
+
+
+---
+
+# **1. Using `_config.yml` (Recommended for Jekyll/GitHub Pages)**
+
+Open `_config.yml` and add/change:
+
+```yaml
+theme: jekyll-theme-hacker
+```
+
+* Save the file and commit to GitHub.
+* GitHub Pages will rebuild your site with the Hacker theme automatically.
+
+---
+
+# **2. Using GitHub Repository Settings (Web UI)**
+
+1. Go to your repository on GitHub.
+2. Click **Settings → Pages → Theme Chooser**.
+3. Select **Hacker** from the list.
+4. Click **Save**.
+5. GitHub will rebuild your site with the new theme.
+
+---
+
+# **3. Things to note**
+
+* Some themes override **layouts** (`home`, `page`, `post`).
+  You might need to **adjust your `_layouts/*.html`** if you have custom HTML.
+* Assets like CSS/images might change; check your site after switching.
+* You can **preview locally** using:
+
+```bash
+bundle exec jekyll serve
+```
+
+and open:
+
+```
+http://localhost:4000
+```
+
+---
+
+
+
+**build and preview your GitHub Pages site locally** before pushing changes. 
+
+
+---
+
+# **1. Install Ruby and Bundler**
+
+GitHub Pages uses **Jekyll**, which is Ruby-based.
+
+### On Linux (Ubuntu/Debian):
+
+```bash
+sudo apt update
+sudo apt install ruby-full build-essential zlib1g-dev
+```
+
+Set up environment to avoid permission issues:
+
+```bash
+echo '# Install Ruby Gems to ~/gems' >> ~/.bashrc
+echo 'export GEM_HOME="$HOME/gems"' >> ~/.bashrc
+echo 'export PATH="$HOME/gems/bin:$PATH"' >> ~/.bashrc
+source ~/.bashrc
+```
+
+Install Bundler:
+
+```bash
+gem install bundler
+```
+
+---
+
+# **2. Install Jekyll & GitHub Pages locally**
+
+In your site folder:
+
+```bash
+cd ~/Desktop/MY_GIT/tpj-root.github.io
+bundle init   # creates a Gemfile if none exists
+```
+
+Edit `Gemfile` and add:
+
+```ruby
+gem "github-pages", group: :jekyll_plugins
+```
+
+Then run:
+
+```bash
+bundle install
+```
+
+---
+
+# **3. Build & serve locally**
+
+Run:
+
+```bash
+bundle exec jekyll serve
+```
+
+* Your site will build and be served locally at:
+
+```
+http://localhost:4000
+```
+
+* It **automatically reloads** when you edit files.
+
+---
+
+# **4. Optional: Using a theme**
+
+If you use a theme (like Hacker):
+
+* Add in `_config.yml`:
+
+```yaml
+theme: jekyll-theme-hacker
+```
+
+* Then rebuild with:
+
+```bash
+bundle exec jekyll serve
+```
+
+---
+
+# **5. Tips**
+
+* Any post in `_posts/` must follow `YYYY-MM-DD-title.md` to show correctly.
+* You can check `/projects/`, `/blog/`, `/WhatsAppChannel/` locally before pushing.
+* If you get errors, run:
+
+```bash
+bundle exec jekyll doctor
+```
+
+---
