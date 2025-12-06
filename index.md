@@ -1,5 +1,5 @@
 ---
-layout: home
+layout: page
 title: I_am_Sab
 ---
 
@@ -16,8 +16,8 @@ Welcome to my personal website! Here, I share:
 
 ## 📂 Explore My Work
 
-- [Projects](#) — Code, tools, and experiments  
-- [Blog](#) — Notes, tutorials, and thoughts  
+- [Projects](/projects/) — Code, tools, and experiments  
+- [Blog](/blog/) — Notes, tutorials, and thoughts  
 - [About Me](about.html) — Who I am and what I do  
 
 ## 📫 Connect With Me
@@ -26,3 +26,4 @@ Welcome to my personal website! Here, I share:
 - Email: trichyhackerspace@gmail.com
 
 Thanks for visiting! 🚀
+
