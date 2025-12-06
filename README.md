@@ -17,3 +17,6 @@ Morse code line → OK
 Footer details → OK
 
 Front-matter:
+
+
+Rule : YYYY-MM-DATE
