@@ -1,0 +1,6 @@
+theme: jekyll-theme-cayman
+title: I_am_Sab
+description: I research CNC machines, aiming to design low-cost systems and produce efficiently and affordably.
+plugins:
+  - jekyll-sitemap
+ 
