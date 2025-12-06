@@ -2,7 +2,8 @@
 layout: post
 title: "GitHub Markdown Editing — Basic to Master"
 categories: blog
-published: false
+# published: false   # This line is ignored by Jekyll
+published: true
 ---
 
 ---
@@ -325,5 +326,40 @@ This post will appear in loops like:
 ✅ It will show exactly like a normal post.
 
 Use `published: false` only when you want to **hide the post temporarily**.
+
+
+
+
+Example in front matter:
+
+```yaml
+---
+layout: post
+title: "My Post"
+# published: false   # This line is ignored by Jekyll
+published: true
+---
+```
+
+* `#` → tells Jekyll **ignore this line**
+* Everything else is **processed normally**
+
+---
+
+In **Markdown text (outside front matter)**, `#` **does mean a header**:
+
+```markdown
+# Heading 1
+## Heading 2
+### Heading 3
+```
+
+So the meaning depends on **where** you use it:
+
+| Context           | Meaning          |
+| ----------------- | ---------------- |
+| YAML front matter | Comment          |
+| Markdown content  | Header (H1, H2…) |
+
 
 
