@@ -1,9 +1,8 @@
 ---
 layout: page
-title: About
+title: About Me
+tagline: Me
 ---
-
-# About Me
 
 Hello! I'm Sabari.
 I build with C++, image processing, bots, and custom tools.
